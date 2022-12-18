@@ -103,7 +103,7 @@
   height: 100%;
 }
 
-@media (min-width: 400px) {
+@media (min-height: 400px) {
   .container {
     height: 100vh;
   }
