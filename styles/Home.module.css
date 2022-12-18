@@ -158,6 +158,8 @@
 
 .button {
   display: inline-block;
+  width: 100%;
+  max-width: 100%;
   background: #FFF;
   color: #000;
   padding: 1em 1.5em;
@@ -165,6 +167,12 @@
   font-size: 1.3em;
   margin-bottom: 1em;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .button {
+    width: auto;
+  }
 }
 
 .footer {

@@ -101,7 +101,7 @@ export default function Home() {
 
           <p>
             <Link href="mailto:hello@barnescode.co.uk?subject=Hello Barnes Code">
-              <span className={styles.button}>Tell us what you want</span>
+              <span className={styles.button}>Tell us what you want to build</span>
             </Link>
           </p>
         </div>
