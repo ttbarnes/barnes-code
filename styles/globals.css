@@ -30,3 +30,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p::-moz-selection,
+p::selection {
+  background: #000;
+  color: #FFF;
+}
