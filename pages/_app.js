@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import { Layout } from '../components/Layout';
+import { Meta } from '../components/Meta';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import '../styles/globals.css';
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => (
+  <>
+    <Meta />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </>
+);
+
+export default MyApp;
