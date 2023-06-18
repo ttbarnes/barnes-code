@@ -1,0 +1,19 @@
+.bgImage {
+  background-image: url('/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh);
+  isolation: isolate;
+  position: relative;
+  width: calc(100vw - 17px);
+
+  &::after {
+    background: #000;
+    content: '';
+    inset: 0;
+    opacity: 0.35;
+    position: absolute;
+    z-index: -1;
+  }
+}
