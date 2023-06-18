@@ -42,3 +42,36 @@ p::selection {
   background: #000;
   color: #fff;
 }
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+header,
+footer {
+  height: 100px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+footer {
+  background-color: #22222c;
+
+  nav a {
+    display: inline-block;
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -1,12 +1,19 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const Header = () => (
   <header>
-    <Link href="/">Logo</Link>
-    {/* Burger menu to go here instead */}
-    <nav>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
-    </nav>
+    <div className="container">
+      <Link href="/">
+        <Image
+          alt="Barnes Code logo"
+          height={50}
+          priority="true"
+          quality={100}
+          src="/logo.svg"
+          width={140}
+        />
+      </Link>
+    </div>
   </header>
 );
