@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 export const Footer = () => (
   <footer>
-    <div className="container">
+    <div className='container'>
       <nav>
-        <Link href="/">
+        <Link href='/'>
           <Image
-            alt="Barnes Code logo"
+            alt='Barnes Code footer logo'
             height={20}
-            priority="true"
+            priority='true'
             quality={100}
-            src="/logo-footer.svg"
+            src='/logo-footer.svg'
             width={200}
           />
         </Link>

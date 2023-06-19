@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 export const Header = () => (
   <header>
-    <div className="container">
-      <Link href="/">
+    <div className='container'>
+      <Link href='/'>
         <Image
-          alt="Barnes Code logo"
+          alt='Barnes Code logo'
           height={50}
-          priority="true"
+          priority='true'
           quality={100}
-          src="/logo.svg"
+          src='/logo.svg'
           width={140}
         />
       </Link>
