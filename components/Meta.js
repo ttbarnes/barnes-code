@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import { TITLE, DESCRIPTION, KEYWORDS, DOMAIN } from '../constants';
 
 export const Meta = () => (

@@ -1,6 +1,5 @@
 import { Layout } from '../components/Layout';
 import { Meta } from '../components/Meta';
-
 import '../styles/globals.scss';
 
 const MyApp = ({ Component, pageProps }) => (

@@ -1,7 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Meta } from './Meta';
-import '@testing-library/jest-dom';
-
 import { TITLE } from '../constants';
 
 jest.mock('next/head', () => {
