@@ -3,7 +3,7 @@ import { Footer } from './Footer';
 import '@testing-library/jest-dom';
 
 describe('Footer', () => {
-  it('renders with logo and copy', () => {
+  it('renders correctly', () => {
     render(<Footer />);
 
     const logo = screen.getByRole('img', { name: /barnes code footer logo/i });

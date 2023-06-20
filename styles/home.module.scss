@@ -17,3 +17,32 @@
     z-index: -1;
   }
 }
+
+.intro {
+  text-align: center;
+
+  h2,
+  p {
+    font-style: normal;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 75px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin-top: 150px;
+  }
+}

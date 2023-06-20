@@ -12,7 +12,7 @@ jest.mock('next/head', () => {
 });
 
 describe('Meta', () => {
-  it('renders the page title', () => {
+  it('renders correctly', () => {
     render(<Meta />);
 
     expect(document.title).toBe(TITLE);

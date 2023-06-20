@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>USER_RESEARCH</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="HOMEPAGE_FINAL" transform="translate(-1027.000000, -2079.000000)" stroke="#FFFFFF" stroke-width="4.69766164">
+            <g id="USER_RESEARCH" transform="translate(1075.000000, 2127.000000) scale(-1, 1) translate(-1075.000000, -2127.000000) translate(1030.000000, 2082.000000)">
+                <path d="M15.6360843,1.48420356 L1.49046368,15.5759567 C-0.496821227,17.5556739 -0.496821227,20.7936529 1.49046368,22.7725909 L56.5369261,77.6102115 L77.906691,56.3218242 L22.8602287,1.48420356 C20.8737258,-0.494734518 17.6225872,-0.494734518 15.6360843,1.48420356 Z" id="Stroke-1"></path>
+                <path d="M85.6246455,88.3714275 L88.7091995,85.2986197 C90.6957023,83.3196816 90.1427663,80.8834063 88.7091995,78.1019854 L77.9070039,56.3212009 L56.5372389,77.6095882 L78.4005012,88.3714275 C81.5585715,89.7083793 83.6381427,90.3503655 85.6246455,88.3714275 Z" id="Stroke-3"></path>
+                <line x1="32.6098124" y1="12.1571464" x2="12.0315202" y2="31.9706795" id="Stroke-5"></line>
+                <line x1="83.1348693" y1="89.6104453" x2="22.8640609" y2="89.6104453" id="Stroke-7"></line>
+            </g>
+        </g>
+    </g>
+</svg>

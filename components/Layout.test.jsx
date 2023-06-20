@@ -3,7 +3,7 @@ import { Layout } from './Layout';
 import '@testing-library/jest-dom';
 
 describe('Layout', () => {
-  it('renders with header, child component and footer', () => {
+  it('renders correctly', () => {
     render(<Layout>Child Component</Layout>);
 
     const headerLogo = screen.getByRole('img', { name: /barnes code logo/i });
