@@ -1,4 +1,4 @@
-.bgImage {
+.intro {
   background-image: url('/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -6,7 +6,8 @@
   height: calc(100vh);
   isolation: isolate;
   position: relative;
-  width: 100vw;
+  text-align: center;
+  width: 100%;
 
   &::after {
     background: #000;
@@ -16,14 +17,6 @@
     position: absolute;
     z-index: -1;
   }
-
-  @media (min-width: 600px) {
-    width: calc(100vw - 17px);
-  }
-}
-
-.intro {
-  text-align: center;
 
   h2,
   p {
@@ -51,6 +44,11 @@
   }
 
   @media (min-width: 600px) {
+    > div {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     h2 {
       font-size: 75px;
       line-height: 75px;

@@ -6,26 +6,24 @@ import styles from '../styles/home.module.scss';
 export default function Home() {
   return (
     <>
-      <div className={styles.bgImage}>
+      <div className={styles.intro}>
         <div className='container'>
-          <div className={styles.intro}>
-            <h2>Creative software engineering</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-              <br />
-              elit, sed do eiusmod tempor
-            </p>
-            <button>
-              <Image
-                alt='Scroll arrow'
-                height={45}
-                priority='true'
-                quality={100}
-                src='/scroll-arrow.svg'
-                width={95}
-              />
-            </button>
-          </div>
+          <h2>Creative software engineering</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            <br />
+            elit, sed do eiusmod tempor
+          </p>
+          <button>
+            <Image
+              alt='Scroll arrow'
+              height={45}
+              priority='true'
+              quality={100}
+              src='/scroll-arrow.svg'
+              width={95}
+            />
+          </button>
         </div>
       </div>
 

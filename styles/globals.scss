@@ -50,13 +50,15 @@ p::selection {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 20px;
   max-width: 1140px;
-  width: 100%;
+  width: calc(100% - 40px);
 
   @media (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -72,19 +74,11 @@ header {
 
   .container {
     align-items: start;
-
-    img {
-      margin-left: 20px;
-    }
   }
 
   @media (min-width: 600px) {
     .container {
       align-items: center;
-
-      img {
-        margin-left: 0;
-      }
     }
   }
 }
