@@ -6,7 +6,7 @@
   height: calc(100vh);
   isolation: isolate;
   position: relative;
-  width: calc(100vw - 17px);
+  width: 100vw;
 
   &::after {
     background: #000;
@@ -15,6 +15,10 @@
     opacity: 0.35;
     position: absolute;
     z-index: -1;
+  }
+
+  @media (min-width: 600px) {
+    width: calc(100vw - 17px);
   }
 }
 
@@ -28,21 +32,33 @@
   }
 
   h2 {
-    font-size: 75px;
+    font-size: 40px;
     font-weight: 800;
-    line-height: 75px;
+    line-height: 40px;
   }
 
   p {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 25px;
   }
 
   button {
     background: none;
     border: none;
     margin-top: 150px;
+  }
+
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 75px;
+      line-height: 75px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 35px;
+    }
   }
 }

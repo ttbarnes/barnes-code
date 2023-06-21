@@ -1,21 +1,23 @@
 .card {
   align-items: center;
   display: flex;
+  flex-direction: column;
 
   &Image,
   &Content {
-    width: 50%;
+    width: 100%;
   }
 
   &Image {
     img {
       display: block;
+      height: 100%;
       width: 100%;
     }
   }
 
   &Content {
-    padding: 70px;
+    padding: 20px;
 
     h3,
     p {
@@ -23,11 +25,12 @@
     }
 
     h3 {
+      align-items: center;
       display: flex;
-      font-size: 45px;
+      font-size: 30px;
       font-weight: 800;
-      line-height: 50px;
-      margin-bottom: 45px;
+      line-height: 38px;
+      margin-bottom: 20px;
 
       img {
         margin-right: 30px;
@@ -35,9 +38,13 @@
     }
 
     p {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 300;
-      line-height: 36px;
+      line-height: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -48,14 +55,46 @@
   &Middle {
     background-color: #fff;
 
-    .cardImage {
-      order: 1;
-    }
-
     .cardContent {
       h3,
       p {
         color: #000;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+
+    &Image,
+    &Content {
+      width: 50%;
+    }
+
+    &Image {
+      img {
+        height: auto;
+      }
+    }
+
+    &Content {
+      padding: 0 70px;
+
+      h3 {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 45px;
+      }
+
+      p {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+
+    &Middle {
+      .cardImage {
+        order: 1;
       }
     }
   }
