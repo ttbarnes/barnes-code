@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { Card } from '../components/Card';
+import { Mission } from '../components/Mission';
+import { Process } from '../components/Process';
 import { TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
@@ -26,6 +28,8 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      <Mission />
 
       <Card
         alt='User research'
@@ -66,6 +70,8 @@ export default function Home() {
       >
         {TEXT}
       </Card>
+
+      <Process />
     </>
   );
 }

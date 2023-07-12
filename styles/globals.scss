@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 
 html,
 body {
@@ -41,6 +41,13 @@ p::-moz-selection,
 p::selection {
   background: #000;
   color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 // Custom styling
