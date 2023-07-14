@@ -10,7 +10,7 @@
   width: 100%;
 
   &::after {
-    background: #000;
+    background: var(--black);
     content: '';
     inset: 0;
     opacity: 0.35;
@@ -31,10 +31,11 @@
   }
 
   p {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-weight: 300;
     line-height: 25px;
+    margin: 20px 0;
   }
 
   button {
@@ -44,6 +45,23 @@
   }
 
   @media (min-width: 600px) {
+    > div {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 55px;
+      line-height: 55px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+
+  @media (min-width: 1300px) {
     > div {
       flex-direction: column;
       justify-content: center;

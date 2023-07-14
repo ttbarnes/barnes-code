@@ -7,7 +7,7 @@ describe('Footer', () => {
     render(<Footer />);
 
     const logo = screen.getByRole('img', { name: /barnes code footer logo/i });
-    const copy = screen.getByText(/© Barnes Code Ltd\. Company no: 09719405/i);
+    const copy = screen.getByText(/© barnes code ltd\. company no: 09719405/i);
 
     expect(logo).toBeInTheDocument();
     expect(copy).toBeInTheDocument();

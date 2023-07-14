@@ -17,23 +17,24 @@
   }
 
   &Content {
-    padding: 20px;
+    padding: 30px 20px;
 
     h3,
     p {
-      color: #fff;
+      color: var(--white);
     }
 
     h3 {
       align-items: center;
       display: flex;
+      flex-direction: column;
       font-size: 30px;
       font-weight: 800;
       line-height: 38px;
       margin-bottom: 20px;
 
       img {
-        margin-right: 30px;
+        margin-bottom: 10px;
       }
     }
 
@@ -41,6 +42,7 @@
       font-size: 20px;
       font-weight: 300;
       line-height: 25px;
+      margin: 20px 0;
 
       &:last-child {
         margin-bottom: 0;
@@ -49,16 +51,16 @@
   }
 
   &Last {
-    background-color: #006694;
+    background-color: var(--blue);
   }
 
   &Middle {
-    background-color: #fff;
+    background-color: var(--white);
 
     .cardContent {
       h3,
       p {
-        color: #000;
+        color: var(--black);
       }
     }
   }
@@ -78,12 +80,60 @@
     }
 
     &Content {
+      padding: 20px;
+
+      h3 {
+        flex-direction: row;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 15px;
+
+        img {
+          height: 45px;
+          margin: 0 15px 0 0;
+          width: 45px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &Middle {
+      .cardImage {
+        order: 1;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+
+    &Image,
+    &Content {
+      width: 50%;
+    }
+
+    &Image {
+      img {
+        height: auto;
+      }
+    }
+
+    &Content {
       padding: 0 70px;
 
       h3 {
+        flex-direction: row;
         font-size: 45px;
         line-height: 50px;
         margin-bottom: 45px;
+
+        img {
+          margin: 0 30px 0 0;
+        }
       }
 
       p {

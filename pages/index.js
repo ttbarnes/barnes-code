@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { Card } from '../components/Card';
-import { Mission } from '../components/Mission';
-import { Process } from '../components/Process';
-import { TEXT } from '../constants';
+import { Info } from '../components/Info';
+import { MISSION, PROCESS, TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
@@ -29,7 +28,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Mission />
+      <Info
+        data={MISSION}
+        strapline='“Iterative, scalable software engineering”'
+        title='Our mission'
+      />
 
       <Card
         alt='User research'
@@ -71,7 +74,12 @@ export default function Home() {
         {TEXT}
       </Card>
 
-      <Process />
+      <Info
+        className='infoLast'
+        data={PROCESS}
+        strapline='“Iterative, scalable software engineering”'
+        title='Our processes'
+      />
     </>
   );
 }

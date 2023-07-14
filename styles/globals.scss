@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 
+// Palette
+:root {
+  --black: #000;
+  --blue-light: #3abfef;
+  --blue: #006694;
+  --grey-dark: #22222b;
+  --grey-light: #f3f3f3;
+  --white: #fff;
+}
+
+// Global styling
 html,
 body {
   padding: 0;
@@ -8,10 +19,11 @@ body {
 }
 
 body {
-  background-color: #22222b;
-  color: #fff;
+  background-color: var(--grey-dark);
+  color: var(--white);
 }
 
+p,
 h1,
 h2,
 h3,
@@ -19,11 +31,6 @@ h4,
 h5 {
   margin: 0;
   padding: 0;
-}
-
-p {
-  margin-bottom: 20px;
-  font-weight: 300;
 }
 
 a {
@@ -39,8 +46,8 @@ a {
 
 p::-moz-selection,
 p::selection {
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
 }
 
 ul,
@@ -64,6 +71,12 @@ li {
   @media (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     width: 100%;
   }
@@ -75,7 +88,7 @@ footer {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 1;
 
