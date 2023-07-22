@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
-
+@import './form.module.scss';
 // Palette
 :root {
   --black: #000;
@@ -44,8 +44,10 @@ a {
   box-sizing: border-box;
 }
 
-p::-moz-selection,
-p::selection {
+// p::-moz-selection,
+// p::selection {
+*::-moz-selection,
+*::selection {
   background: var(--black);
   color: var(--white);
 }

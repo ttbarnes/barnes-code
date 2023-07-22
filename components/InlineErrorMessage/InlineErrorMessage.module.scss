@@ -1,0 +1,21 @@
+.container {
+  transition: all .1s ease;
+  display: block;
+  margin-bottom: .5em;
+  border-radius: .3em;
+}
+
+.containerInactive {
+  opacity: 0;
+  background: none;
+}
+
+.containerActive {
+  opacity: 1;
+  background: #A90101;
+  padding: .5em;
+}
+
+.message {
+  color: #FFF;
+}

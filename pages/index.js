@@ -4,7 +4,7 @@ import { Info } from '../components/Info';
 import { MISSION, PROCESS, TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div className={styles.intro}>
@@ -83,3 +83,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

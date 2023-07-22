@@ -1,0 +1,51 @@
+form {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: .5em;
+}
+
+input,
+textarea {
+  padding: 1em;
+  width: 100%;
+  min-width: 100%;
+  background: #D3D3DB;
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 1em;
+    weight: 600;
+  }
+  border: 0;
+  border-radius: .3em;
+  &:focus {
+    outline: solid 2px #FFF;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  min-height: 100px;
+}
+
+button {
+  width: 100%;
+  background: #006794;
+  color: #FFF;
+  border: 0;
+  border-radius: .3em;
+  padding: 1em 2em;
+  appearance: none;
+  cursor: pointer;
+  font: {
+    weight: 800;
+    size: 1em;
+  }
+  @media (min-width: 600px) {
+    width: auto;
+  }
+}
