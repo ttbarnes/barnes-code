@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Image from 'next/image';
 import classNames from 'classnames';
 import styles from '../styles/info.module.scss';
@@ -30,3 +31,18 @@ export const Info = ({ className, data, strapline, title }) => (
     </ul>
   </section>
 );
+
+Info.propTypes = {
+  className: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    imgPath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  })).isRequired,
+  strapline: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
+
+Info.defaultProps = {
+  className: ''
+};

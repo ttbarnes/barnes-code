@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { Layout } from '../components/Layout';
 import { Meta } from '../components/Meta';
 import '../styles/globals.scss';
 
-const MyApp = ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }) => (
   <>
     <Meta />
     <Layout>
@@ -11,4 +12,9 @@ const MyApp = ({ Component, pageProps }) => (
   </>
 );
 
-export default MyApp;
+App.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object
+};
+
+export default App;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Image from 'next/image';
 import classNames from 'classnames';
 import styles from '../styles/card.module.scss';
@@ -32,3 +33,25 @@ export const Card = ({ alt, children, className, icon, largeImage, title }) => (
     </div>
   </section>
 );
+
+Card.propTypes = {
+  alt: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+    PropTypes.string
+  ]).isRequired,
+  className: PropTypes.string,
+  icon: PropTypes.string,
+  largeImage: PropTypes.string,
+  title: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element
+  ]).isRequired
+};
+
+Card.defaultProps = {
+  className: '',
+  icon: '',
+  largeImage: ''
+};
