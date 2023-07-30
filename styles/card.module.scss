@@ -65,7 +65,7 @@
     }
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     flex-direction: row;
 
     &Image,
@@ -84,7 +84,7 @@
 
       h3 {
         flex-direction: row;
-        font-size: 20px;
+        font-size: 30px;
         line-height: 27px;
         margin-bottom: 15px;
 
@@ -96,8 +96,8 @@
       }
 
       p {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 24px;
       }
     }
 
@@ -108,7 +108,7 @@
     }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1200px) {
     flex-direction: row;
 
     &Image,

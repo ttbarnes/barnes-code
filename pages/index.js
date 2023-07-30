@@ -1,10 +1,18 @@
+import { useRef } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Card } from '../components/Card';
 import { Info } from '../components/Info';
 import { MISSION, PROCESS, TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <div className={styles.intro}>
@@ -15,7 +23,7 @@ export default function Home() {
             <br />
             elit, sed do eiusmod tempor
           </p>
-          <button>
+          <button onClick={handleClick}>
             <Image
               alt='Scroll arrow'
               height={45}
@@ -31,48 +39,67 @@ export default function Home() {
       <Info
         data={MISSION}
         strapline='“Iterative, scalable software engineering”'
+        ref={ref}
         title='Our mission'
       />
 
-      <Card
-        alt='User research'
-        icon='/user-research.svg'
-        largeImage='/user-research.jpg'
-        title={
-          <>
-            User research &<br />
-            design
-          </>
-        }
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
       >
-        {TEXT}
-      </Card>
+        <Card
+          alt='User research'
+          icon='/user-research.svg'
+          largeImage='/user-research.jpg'
+          title={
+            <>
+              User research &<br />
+              design
+            </>
+          }
+        >
+          {TEXT}
+        </Card>
+      </motion.div>
 
-      <Card
-        alt='Engineering'
-        className='cardMiddle'
-        icon='/engineering.svg'
-        largeImage='/engineering.jpg'
-        title='Engineering'
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
       >
-        {TEXT}
-      </Card>
+        <Card
+          alt='Engineering'
+          className='cardMiddle'
+          icon='/engineering.svg'
+          largeImage='/engineering.jpg'
+          title='Engineering'
+        >
+          {TEXT}
+        </Card>
+      </motion.div>
 
-      <Card
-        alt='Re-platforming, modernization'
-        className='cardLast'
-        icon='/rocket.svg'
-        largeImage='/modernization.jpg'
-        title={
-          <>
-            Re-platforming,
-            <br />
-            modernization
-          </>
-        }
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
       >
-        {TEXT}
-      </Card>
+        <Card
+          alt='Re-platforming, modernization'
+          className='cardLast'
+          icon='/rocket.svg'
+          largeImage='/modernization.jpg'
+          title={
+            <>
+              Re-platforming,
+              <br />
+              modernization
+            </>
+          }
+        >
+          {TEXT}
+        </Card>
+      </motion.div>
 
       <Info
         className='infoLast'
