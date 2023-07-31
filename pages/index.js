@@ -17,22 +17,36 @@ export default function Home() {
     <>
       <div className={styles.intro}>
         <div className='container'>
-          <h2>Creative software engineering</h2>
+          <h1>Creative software engineering</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing
             <br />
             elit, sed do eiusmod tempor
           </p>
-          <button onClick={handleClick}>
-            <Image
-              alt='Scroll arrow'
-              height={45}
-              priority='true'
-              quality={100}
-              src='/scroll-arrow.svg'
-              width={95}
-            />
-          </button>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 3 } }}
+            animate={{
+              position: 'relative',
+              top: ['10%', '11%', '10%', '11%', '10%'],
+            }}
+            transition={{
+              duration: 3,
+              ease: 'easeInOut',
+              times: [0, 0.2, 0.5, 0.8, 1],
+            }}
+            viewport={{ once: true }}
+          >
+            <button onClick={handleClick}>
+              <Image
+                alt='Scroll arrow'
+                height={45}
+                quality={100}
+                src='/scroll-arrow.svg'
+                width={95}
+              />
+            </button>
+          </motion.div>
         </div>
       </div>
 

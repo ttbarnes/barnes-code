@@ -49,12 +49,13 @@
         border-radius: 110px;
         display: flex;
         height: 150px;
+        width: 150px;
         justify-content: center;
         margin-bottom: 15px;
-        width: 150px;
 
         img {
-          width: 60%;
+          height: auto;
+          width: 70%;
         }
       }
 
@@ -69,7 +70,7 @@
         color: var(--grey-dark);
         font-size: 20px;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 27px;
         margin: 0 0 20px 0;
       }
     }
@@ -80,11 +81,48 @@
       li {
         .imageWrapper {
           background-color: transparent;
+          height: auto;
+          margin-bottom: 25px;
+          width: auto;
+
+          img {
+            height: auto;
+            width: 100%;
+          }
         }
 
         h3 {
           color: var(--grey-dark);
-          flex: 1;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 400px) {
+    &Last {
+      ul {
+        gap: 20px;
+        grid-template-columns: repeat(2, 170px);
+
+        li {
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    &Last {
+      ul {
+        gap: 20px;
+        grid-template-columns: repeat(2, 270px);
+
+        li {
+          h3 {
+            font-size: 30px;
+          }
         }
       }
     }
@@ -105,7 +143,7 @@
     &Last {
       ul {
         gap: 20px;
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(4, 175px);
 
         li {
           .imageWrapper {

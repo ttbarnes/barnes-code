@@ -20,9 +20,8 @@ export const Info = forwardRef(function Info(props, ref) {
           <li key={index}>
             <div className={styles.imageWrapper}>
               <Image
-                alt={title}
+                alt=''
                 height={132}
-                priority='true'
                 quality={100}
                 src={imgPath}
                 width={132}

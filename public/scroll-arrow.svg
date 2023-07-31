@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="96px" height="46px" viewBox="0 0 96 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>SCROLL_ARROW</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="HOMEPAGE_FINAL" transform="translate(-912.000000, -877.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M1003.33909,878.131477 C1004.37105,877.214182 1005.95123,877.307133 1006.86852,878.33909 C1007.78582,879.371047 1007.69287,880.951228 1006.66091,881.868523 L961.66091,921.868523 C960.713695,922.710492 959.286305,922.710492 958.33909,921.868523 L913.33909,881.868523 C912.307133,880.951228 912.214182,879.371047 913.131477,878.33909 C914.048772,877.307133 915.628953,877.214182 916.66091,878.131477 L960,916.655 L1003.33909,878.131477 Z" id="SCROLL_ARROW"></path>
-        </g>
-    </g>
-</svg>
+<svg width="96" height="46" xmlns="http://www.w3.org/2000/svg"><path d="M91.34 1.131a2.5 2.5 0 1 1 3.32 3.738l-45 40a2.5 2.5 0 0 1-3.32 0l-45-40A2.5 2.5 0 1 1 4.66 1.13L48 39.655 91.34 1.131z" fill="#FFF" fill-rule="nonzero"/></svg>

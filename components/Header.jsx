@@ -8,7 +8,6 @@ export const Header = () => (
         <Image
           alt='Barnes Code logo'
           height={50}
-          priority='true'
           quality={100}
           src='/logo.svg'
           width={140}

@@ -34,22 +34,22 @@ export const MISSION = [
 
 export const PROCESS = [
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
     title: 'Listen and understand',
     imgPath: '/process-listen.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     title: 'Define MVP',
     imgPath: '/process-mvp.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     title: 'Deliver',
     imgPath: '/process-deliver.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     title: 'Iterate',
     imgPath: '/process-iterate.svg',
   },

@@ -9,7 +9,6 @@ export const Footer = () => (
           <Image
             alt='Barnes Code footer logo'
             height={20}
-            priority='true'
             quality={100}
             src='/logo-footer.svg'
             width={200}
