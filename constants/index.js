@@ -41,7 +41,7 @@ export const PROCESS = [
   {
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     title: 'Define MVP',
-    imgPath: '/process-mvp.svg',
+    imgPath: '/process-define.svg',
   },
   {
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
