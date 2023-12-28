@@ -7,10 +7,10 @@ export const Header = () => (
       <Link href='/'>
         <Image
           alt='Barnes Code logo'
-          height={50}
+          height={90}
           quality={100}
           src='/logo.svg'
-          width={140}
+          width={180}
         />
       </Link>
     </div>

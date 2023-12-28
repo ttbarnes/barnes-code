@@ -18,11 +18,7 @@ export default function Home() {
       <div className={styles.intro}>
         <div className='container'>
           <h1>Creative software engineering</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            <br />
-            elit, sed do eiusmod tempor
-          </p>
+          <p>We build products and services that are easy to use and scale</p>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 3 } }}

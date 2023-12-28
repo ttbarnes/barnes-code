@@ -16,40 +16,40 @@ export const TEXT = (
 
 export const MISSION = [
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Software',
+    text: 'Build the core of a product or service that meets user, business and technical requirements.',
+    title: 'Build',
     imgPath: '/software.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Services',
+    text: 'Enhance and build upon the core product. Optimise the user experience and scalability.',
+    title: 'Iterate',
     imgPath: '/services.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Products',
+    text: 'Combine updates into small, releasable chunks or versions, without a "big bang" release.',
+    title: 'Package',
     imgPath: '/products.svg',
   },
 ];
 
 export const PROCESS = [
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+    text: 'Collate the needs, wants and must haves. Understand opportunities.',
     title: 'Listen and understand',
     imgPath: '/process-listen.svg',
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'Create a list of the simplest features that could be released as a first version. Keep it simple.',
     title: 'Define MVP',
     imgPath: '/process-define.svg',
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'Build and deliver the first version. Obtain invaluable user feedback.',
     title: 'Deliver',
     imgPath: '/process-deliver.svg',
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    text: 'Prioritise new features and enhancements - release in small chunks and repeat.',
     title: 'Iterate',
     imgPath: '/process-iterate.svg',
   },
