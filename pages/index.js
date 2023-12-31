@@ -1,117 +1,126 @@
-import Head from 'next/head';
+import { useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import { motion } from 'framer-motion';
+import { Card } from '../components/Card';
+import { Info } from '../components/Info';
+import { MISSION, PROCESS, CARD_TEXT } from '../constants';
+import styles from '../styles/home.module.scss';
 
 export default function Home() {
-  const title = 'Barnes Code - Creative software engineering';
-  const description = 'Specialists in bespoke web app development, API design, database design and more.';
-  const keywords = 'Barnes code, barnescode.co.uk, Bespoke web app development, full stack development, javascript';
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>{title}</title>
-        <meta
-          name='description'
-          content={description}
-        />
+    <>
+      <div className={styles.intro}>
+        <div className='container'>
+          <h1>Creative software engineering</h1>
+          <p>We build products and services that are easy to use and scale</p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 3 } }}
+            animate={{
+              position: 'relative',
+              top: ['10%', '11%', '10%', '11%', '10%'],
+            }}
+            transition={{
+              duration: 3,
+              ease: 'easeInOut',
+              times: [0, 0.2, 0.5, 0.8, 1],
+            }}
+            viewport={{ once: true }}
+          >
+            <button onClick={handleClick}>
+              <Image
+                alt='Scroll arrow'
+                height={45}
+                quality={100}
+                src='/scroll-arrow.svg'
+                width={95}
+              />
+            </button>
+          </motion.div>
+        </div>
+      </div>
 
-        <meta
-          name='viewport'
-          content='height=device-height,width=device-width,initial-scale=1.0'
-        />
+      <Info
+        data={MISSION}
+        strapline='“Iterative, scalable software engineering”'
+        ref={ref}
+        title='Our mission'
+      />
 
-        <meta
-          name='author'
-          content='Barnes Code'
-        />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
+      >
+        <Card
+          alt='User research'
+          icon='/user-research.svg'
+          largeImage='/user-research.jpg'
+          title={
+            <>
+              User research &<br />
+              design
+            </>
+          }
+        >
+          {CARD_TEXT.UX_DESIGN}
+        </Card>
+      </motion.div>
 
-        <meta name='keywords' content={keywords} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
+      >
+        <Card
+          alt='Engineering'
+          className='cardMiddle'
+          icon='/engineering.svg'
+          largeImage='/engineering.jpg'
+          title='Engineering'
+        >
+          {CARD_TEXT.ENGINEERING}
+        </Card>
+      </motion.div>
 
-        <meta
-          property='og:type'
-          content='website'
-        />
-
-        <meta
-          property='og:title'
-          content={title}
-        />
-
-        <meta
-          property='og:description'
-          content={description}
-        />
-
-        <meta
-          property='og:url'
-          content='https://barnescode.co.uk'
-        />
-
-
-        <meta
-          property='twitter:url'
-          content='https://barnescode.co.uk'
-        />
-
-        <meta
-          name='twitter:title'
-          content=''
-        />
-        <meta
-          name='twitter:description'
-          content={description}
-        />
-
-        <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
-        <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-      </Head>
-
-      <main className={styles.main}>
-        <Image
-          src='/bg.jpg'
-          alt='Landscape picture of a lake and shooting star'
-          layout='fill'
-          width={1000}
-          height={1000}
-          quality={100}
-          priority='true'
-          style={{
-            opacity: '.35'
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+        viewport={{ once: true }}
+      >
+        <Card
+          alt='Re-platforming, modernization'
+          className='cardLast'
+          icon='/rocket.svg'
+          largeImage='/modernization.jpg'
+          title={
+            <>
+              Re-platforming,
+              <br />
+              modernization
+            </>
+          }
+          customIconSize={{
+            width: 75,
+            height: 75
           }}
-          aria-hidden
-        />
+        >
+          {CARD_TEXT.REPLATFORMING}
+        </Card>
+      </motion.div>
 
-        <div className={styles.content}>
-          <h1 aria-label='Barnes Code'>
-            <img
-              src='/logo.svg'
-              alt='Barnes Code logo'
-              width={1000}
-              height={1000}
-              quality={100}
-              priority='true'
-              className={styles.logo}
-            />
-          </h1>
-
-          <p className={styles.tagline}>Creative software engineering</p>
-
-          <p>
-            <Link href="mailto:hello@barnescode.co.uk?subject=Hello Barnes Code">
-              <span className={styles.button}>Tell us what you want to build</span>
-            </Link>
-          </p>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <p className={styles.footerCopy}>&copy; Barnes Code Ltd. Company no: 09719405</p>
-        </div>
-      </footer>
-    </div>
-  )
+      <Info
+        className='infoLast'
+        data={PROCESS}
+        strapline='“Iterative, scalable software engineering”'
+        title='Our processes'
+      />
+    </>
+  );
 }

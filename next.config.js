@@ -5,7 +5,6 @@ const nextConfig = {
     locales: ['en'],
     defaultLocale: 'en',
   },
-  target: 'serverless'
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
