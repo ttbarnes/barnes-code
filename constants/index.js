@@ -5,14 +5,26 @@ export const KEYWORDS =
   'Barnes code, barnescode.co.uk, Bespoke web app development, full stack development, javascript';
 export const DOMAIN = 'https://barnescode.co.uk';
 
-export const TEXT = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
-);
+export const CARD_TEXT = {
+  UX_DESIGN: (
+    <p>
+      Understanding user needs and potential behaviours is essential for delivering a seemless experience.
+      After gaining some insights, we can start creating multiple designs for further feedback, testing and iterations.
+      This also enables us to plan MVP and technical requirements.
+    </p>,
+  ),
+  // Automated testing is also at the forefront of our technical approaches to ensure that a product is always working.
+  ENGINEERING: (
+    <p>
+      We strive on creating clean and scalable technical solutions. By following a very modular approach and going above industry standards, the features and functionality we build can be easily maintained, adapted and used in different areas.
+    </p>
+  ),
+  REPLATFORMING: (
+    <p>
+      We are experts at delivering re-platformed and digital transformation projects. After understanding existing solutions that are in place, we can transform products or services into modern solutions whilst greatly simplifying and improving user journeys.
+    </p>
+  )
+};
 
 export const MISSION = [
   {
@@ -26,7 +38,7 @@ export const MISSION = [
     imgPath: '/services.svg',
   },
   {
-    text: 'Combine updates into small, releasable chunks or versions, without a "big bang" release.',
+    text: 'Get results quickly by combining updates into small, releasable chunks, without a "big bang" release.',
     title: 'Package',
     imgPath: '/products.svg',
   },
