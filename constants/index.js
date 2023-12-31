@@ -9,8 +9,8 @@ export const CARD_TEXT = {
   UX_DESIGN: (
     <p>
       Understanding user needs and potential behaviours is essential for delivering a seemless experience.
-      After gaining some insights, we can start creating multiple designs for further feedback, testing and iterations.
-      This also enables us to plan MVP and technical requirements.
+      After gaining some insights, we can start to create multiple designs for further feedback, testing and iterations.
+      This also enables us to realise a vision, define a strategy and create technical requirements.
     </p>,
   ),
   ENGINEERING: (
@@ -20,19 +20,19 @@ export const CARD_TEXT = {
   ),
   REPLATFORMING: (
     <p>
-      We are experts at delivering re-platformed and digital transformation projects. After understanding existing processes, we can transform products or services into modern solutions, with automation and greatly simplified user journeys and processes.
+      We are experts at delivering re-platformed and digital transformation projects. After understanding existing processes, we can transform products or services into modern solutions with automation and greatly simplified user journeys.
     </p>
   )
 };
 
 export const MISSION = [
   {
-    text: 'Build the core of a product or service that meets user, business and technical requirements.',
+    text: 'Build the core product or service that meets user, business and technical requirements.',
     title: 'Build',
     imgPath: '/software.svg',
   },
   {
-    text: 'Enhance and build upon the core product. Optimise the user experience and scalability.',
+    text: 'Enhance and build upon the core functionality. Optimise the user experience and introduce automation.',
     title: 'Iterate',
     imgPath: '/services.svg',
   },
@@ -60,7 +60,7 @@ export const PROCESS = [
     imgPath: '/process-deliver.svg',
   },
   {
-    text: 'Prioritise new features and enhancements - release in small chunks and repeat.',
+    text: 'Prioritise new features and enhancements. Build and release in small chunks; Repeat.',
     title: 'Iterate',
     imgPath: '/process-iterate.svg',
   },
