@@ -24,12 +24,12 @@ export const Card = ({
       className={classNames(styles.card, className ? styles[className] : '')}
     >
       <div className={styles.cardImage}>
-        <Image alt='' width={960} height={960} quality={100} src={largeImage} />
+        <Image alt={alt} width={960} height={960} quality={100} src={largeImage} />
       </div>
       <div className={styles.cardContent}>
         <h3>
           <Image
-            alt=''
+            alt={alt}
             width={customIconSize?.width ? customIconSize.width : 90}
             height={customIconSize?.height ? customIconSize.height : 90}
             quality={100}
@@ -57,7 +57,8 @@ Card.propTypes = {
   title: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element
-  ]).isRequired
+  ]).isRequired,
+  customIconSize: PropTypes.object
 };
 
 Card.defaultProps = {
