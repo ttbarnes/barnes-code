@@ -20,7 +20,7 @@ export const CARD_TEXT = {
   ),
   REPLATFORMING: (
     <p>
-      We are experts at delivering re-platformed and digital transformation projects. After understanding existing solutions that are in place, we can transform products or services into modern solutions whilst greatly simplifying and improving user journeys.
+      We are experts at delivering re-platformed and digital transformation projects. After understanding existing processes, we can transform products or services into modern solutions, with automation and greatly simplified user journeys and processes.
     </p>
   )
 };
