@@ -46,8 +46,6 @@ a {
   box-sizing: border-box;
 }
 
-// p::-moz-selection,
-// p::selection {
 *::-moz-selection,
 *::selection {
   background: var(--black);
