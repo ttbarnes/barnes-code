@@ -36,5 +36,9 @@ export const PAGES = {
       FOR_MORE_INFORMATION: 'For more information or to discover how we can help, email us at',
       ALTERNATIVELY: 'or fill out the form below.',
     }
+  },
+  CONTACT_THANK_YOU: {
+    PAGE_TITLE: 'Thank you',
+    BODY: 'We will respond as soon as possible. '
   }
 };

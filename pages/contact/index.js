@@ -9,29 +9,27 @@ const {
   CONTACT: { PAGE_TITLE, INTRO }
  } = PAGES;
 
-const ContactPage = ({ submittedValues }) => {
-  return (
-    <>
-      <div className={styles.intro}>
-        <div className={`container ${styles.container}`}>
-          <h2>{PAGE_TITLE}</h2>
+const ContactPage = ({ submittedValues }) => (
+  <>
+    <div className={styles.intro}>
+      <div className={`container ${styles.container}`}>
+        <h2>{PAGE_TITLE}</h2>
 
-          <p className={styles.introCopy}>
-            <span>{INTRO.FOR_MORE_INFORMATION}{' '}</span>
-            <TextLink
-              text={CONTACT_EMAIL}
-              href={`mailto:${CONTACT_EMAIL}`}
-            />
-            <span>{' '}{INTRO.ALTERNATIVELY}</span>
-          </p>
+        <p className={styles.introCopy}>
+          <span>{INTRO.FOR_MORE_INFORMATION}{' '}</span>
+          <TextLink
+            text={CONTACT_EMAIL}
+            href={`mailto:${CONTACT_EMAIL}`}
+          />
+          <span>{' '}{INTRO.ALTERNATIVELY}</span>
+        </p>
 
-          <ContactForm submittedValues={submittedValues} />
+        <ContactForm submittedValues={submittedValues} />
 
-        </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 ContactPage.propTypes = {
   submittedValues: PropTypes.shape({
