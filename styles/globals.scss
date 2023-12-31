@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 @import './form.module.scss';
+
 // Palette
 :root {
   --black: #000;
@@ -106,6 +107,10 @@ header {
 }
 
 footer {
+  .container {
+    width: 100%;
+  }
+
   nav a {
     display: inline-block;
   }

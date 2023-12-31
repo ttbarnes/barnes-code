@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card } from '../components/Card';
 import { Info } from '../components/Info';
+import ContactPanel from '../components/ContactPanel';
 import { MISSION, PROCESS, TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
@@ -80,6 +81,8 @@ const Home = () => {
         strapline='“Iterative, scalable software engineering”'
         title='Our processes'
       />
+
+      <ContactPanel />
     </>
   );
 }

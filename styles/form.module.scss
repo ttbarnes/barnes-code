@@ -32,7 +32,8 @@ textarea {
   min-height: 100px;
 }
 
-button {
+button,
+.button-link {
   width: 100%;
   background: #006794;
   color: #FFF;
@@ -47,5 +48,20 @@ button {
   }
   @media (min-width: 600px) {
     width: auto;
+  }
+
+  &.inline {
+    display: inline-block;
+    width: auto;
+  }
+
+  &.white-bg {
+    background: var(--white);
+    color: var(--blue);
+  }
+
+  &.large {
+    padding-right: 4em;
+    padding-left: 4em;
   }
 }
