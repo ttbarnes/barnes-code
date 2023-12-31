@@ -3,10 +3,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card } from '../components/Card';
 import { Info } from '../components/Info';
+import ContactPanel from '../components/ContactPanel';
 import { MISSION, PROCESS, CARD_TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
-export default function Home() {
+const Home = () => {
   const ref = useRef(null);
 
   const handleClick = () => {
@@ -121,6 +122,10 @@ export default function Home() {
         strapline='“Iterative, scalable software engineering”'
         title='Our processes'
       />
+
+      <ContactPanel />
     </>
   );
 }
+
+export default Home;

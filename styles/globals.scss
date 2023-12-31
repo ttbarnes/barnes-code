@@ -43,8 +43,8 @@ a {
   box-sizing: border-box;
 }
 
-p::-moz-selection,
-p::selection {
+*::-moz-selection,
+*::selection {
   background: var(--black);
   color: var(--white);
 }
@@ -63,7 +63,7 @@ li {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin: 0 20px;
+  padding: 0 20px;
   max-width: 1140px;
   width: calc(100% - 40px);
 
@@ -105,6 +105,10 @@ header {
 }
 
 footer {
+  .container {
+    width: 100%;
+  }
+
   nav a {
     display: inline-block;
   }

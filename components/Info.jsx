@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
@@ -35,3 +36,18 @@ export const Info = forwardRef(function Info(props, ref) {
     </section>
   );
 });
+
+Info.propTypes = {
+  className: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    imgPath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  })).isRequired,
+  strapline: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
+
+Info.defaultProps = {
+  className: ''
+};

@@ -7,6 +7,9 @@ const createJestConfig = nextJest({
 /** @type {import('jest').Config} */
 const config = {
   testEnvironment: 'jest-environment-jsdom',
+  globals: {
+    fetch: global.fetch,
+  }
 };
 
 export default createJestConfig(config);
