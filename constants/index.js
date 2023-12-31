@@ -13,7 +13,6 @@ export const CARD_TEXT = {
       This also enables us to plan MVP and technical requirements.
     </p>,
   ),
-  // Automated testing is also at the forefront of our technical approaches to ensure that a product is always working.
   ENGINEERING: (
     <p>
       We strive on creating clean and scalable technical solutions. By following a very modular approach and going above industry standards, the features and functionality we build can be easily maintained, adapted and used in different areas.

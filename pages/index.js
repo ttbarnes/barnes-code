@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card } from '../components/Card';
 import { Info } from '../components/Info';
-import { MISSION, PROCESS, TEXT } from '../constants';
+import { MISSION, PROCESS, CARD_TEXT } from '../constants';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
@@ -69,7 +69,7 @@ export default function Home() {
             </>
           }
         >
-          {TEXT}
+          {CARD_TEXT.UX_DESIGN}
         </Card>
       </motion.div>
 
@@ -85,7 +85,7 @@ export default function Home() {
           largeImage='/engineering.jpg'
           title='Engineering'
         >
-          {TEXT}
+          {CARD_TEXT.ENGINEERING}
         </Card>
       </motion.div>
 
@@ -106,8 +106,12 @@ export default function Home() {
               modernization
             </>
           }
+          customIconSize={{
+            width: 75,
+            height: 75
+          }}
         >
-          {TEXT}
+          {CARD_TEXT.REPLATFORMING}
         </Card>
       </motion.div>
 
