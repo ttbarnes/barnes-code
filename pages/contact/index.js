@@ -42,20 +42,4 @@ ContactPage.defaultProps = {
   submittedValues: {}
 };
 
-export const getServerSideProps = async (context) => {
-  const { req } = context;
-
-  if (req.method == 'POST') {
-    return {
-      props: {
-        submittedValues: req.body
-      }
-    }
-  }
-
-  return {
-    props: {}
-  };
-};
-
 export default ContactPage;
