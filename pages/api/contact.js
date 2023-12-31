@@ -1,34 +1,34 @@
 import nodemailer from 'nodemailer';
 
+const { GMAIL_USERNAME, GMAIL_PASSWORD, CONTACT_FORM_RECIPIENTS } = process.env;
+
 const handler = async (req, res) => {
   try {
+    console.info('✅ Sending email');
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.forwardemail.net",
-      port: 465,
-      secure: true,
+      service: 'gmail',
       auth: {
-        // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-        // user: 'REPLACE-WITH-YOUR-ALIAS@YOURDOMAIN.COM',
-        // pass: 'REPLACE-WITH-YOUR-GENERATED-PASSWORD'
-        user: 'hello@barnescode.co.uk',
-        pass: 'XWcuJ3MyjVk5Bx26qC'
+        user: GMAIL_USERNAME,
+        pass: GMAIL_PASSWORD
       },
       logger: true
     });
 
+    const { email, subject, message } = req.body;
+
     const info = await transporter.sendMail({
-      from: '"Fred Foo 👻" <foo@example.com>', // sender address
-      to: "bar@example.com, baz@example.com", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      from: email,
+      to: CONTACT_FORM_RECIPIENTS,
+      subject: `Barnes Code - ${subject}`,
+      html: message.replaceAll('\n', '<br/>')
     });
 
-    console.log("Message sent: %s", info.messageId);
+    console.info('✅ Email successfully sent: ', info.messageId);
 
     res.status(200).json({ success: true });
   } catch (err) {
-    console.log('------ catch err ', err);
+    console.error('Error Sending email');
 
     res.status(500).json({ success: false });
   }

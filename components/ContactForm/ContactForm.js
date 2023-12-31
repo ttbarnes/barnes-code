@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form';
 import { joiResolver } from '@hookform/resolvers/joi';
 import { FIELD_IDS } from '../../constants';
@@ -13,7 +14,7 @@ import SCHEMA from '../../form-validation/contact';
 const { EMAIL, SUBJECT, MESSAGE } = FIELDS;
 
 const ContactForm = ({ submittedValues }) => {
-  const [success, setSuccess] = useState(false);
+  const router = useRouter();
   const [apiError, setApiError] = useState(false);
 
   const {
@@ -36,40 +37,32 @@ const ContactForm = ({ submittedValues }) => {
     };
 
     handleSubmit(async () => {
-      console.info('Contact form submission - checking for errors');
+      console.info('✅ Contact form submission');
 
       const hasErrors = Object.keys(errors).length;
 
       if (!hasErrors) {
-        console.info('Contact form submission - no errors found - posting to Netlify Forms');
+        console.info('✅ Contact form submission - calling API');
 
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        try {
+          await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(fieldValues)
-        })
-          .then(() => {
-            console.info('Contact form successfully submitted');
-
-            setSuccess(true);
-          })
-          .catch((err) => {
-            console.error('Error submitting contact form ', err);
-
-            setApiError(true);
           });
+
+          router.push('/contact/thank-you');
+        } catch (e) {
+          console.error('Error submitting contact form ', e);
+
+          setApiError(true);
+        }
       }
     })(ev);
   };
 
   return (
     <>
-      {success && (
-        <div role='alert'>
-          Success!
-        </div>
-      )}
-
       {apiError && (
         <InlineErrorMessage
           text={API_GENERIC_ERROR_MESSAGE}

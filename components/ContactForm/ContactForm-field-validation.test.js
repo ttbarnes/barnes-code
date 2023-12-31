@@ -1,5 +1,6 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import * as _nextRouter from 'next/router';
 import ContactForm from './ContactForm';
 import { FIELD_IDS } from '../../constants';
 import { FIELDS } from '../../content-strings';
@@ -8,6 +9,15 @@ import { getSubmitButton } from '../../test-helpers';
 const { EMAIL, SUBJECT, MESSAGE } = FIELDS;
 
 describe('ContactForm', () => {
+  const nextRouter = _nextRouter;
+  nextRouter.useRouter = jest.fn();
+
+  const mockRouter = {
+    route: '/'
+  };
+
+  nextRouter.useRouter.mockImplementation(() => mockRouter);
+
   describe('when all fields are empty and the form is submitted', () => {
     it('should render a validation error for every field', async () => {
       render(<ContactForm submittedValues={{}} />);

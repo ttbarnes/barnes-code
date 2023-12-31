@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import * as _nextRouter from 'next/router';
 import { CONTACT_EMAIL, FIELD_IDS } from '../../constants';
 import { PAGES } from '../../content-strings';
 import ContactPage from '.';
@@ -9,6 +10,17 @@ const {
 } = PAGES;
 
 describe('ContactPage', () => {
+  const nextRouter = _nextRouter;
+  nextRouter.useRouter = jest.fn();
+
+  const mockRouter = {
+    route: '/',
+    pathname: '/',
+    asPath: '/'
+  };
+
+  nextRouter.useRouter.mockImplementation(() => mockRouter);
+
   const mockProps = {
     submittedValues: {
       [FIELD_IDS.EMAIL]: 'mock@test.com'
