@@ -13,9 +13,11 @@ export const ContactPanel = () => (
 
     <Link
       href={ROUTES.CONTACT}
-      className='button-link inline white-bg large'
+      legacyBehavior
     >
-      Get in touch
+      <a className='button-link inline white-bg large'>
+        Get in touch
+      </a>
     </Link>
   </section>
 );
