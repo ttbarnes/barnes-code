@@ -111,7 +111,7 @@ const ContactForm = ({ submittedValues }) => {
 ContactForm.propTypes = {
   submittedValues: PropTypes.shape({
     email: PropTypes.string,
-    subject: PropTypes.string,
+    name: PropTypes.string,
     message: PropTypes.string
   })
 };
