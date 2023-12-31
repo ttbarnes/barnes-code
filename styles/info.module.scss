@@ -12,7 +12,7 @@
   }
 
   &Strapline {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
     color: var(--grey-dark);
@@ -49,12 +49,13 @@
         border-radius: 110px;
         display: flex;
         height: 150px;
+        width: 150px;
         justify-content: center;
         margin-bottom: 15px;
-        width: 150px;
 
         img {
-          width: 60%;
+          height: auto;
+          width: 70%;
         }
       }
 
@@ -63,13 +64,14 @@
         font-size: 30px;
         font-weight: 800;
         margin-bottom: 20px;
+        min-height: 75px;
       }
 
       p {
         color: var(--grey-dark);
         font-size: 20px;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 27px;
         margin: 0 0 20px 0;
       }
     }
@@ -80,6 +82,14 @@
       li {
         .imageWrapper {
           background-color: transparent;
+          height: auto;
+          margin-bottom: 25px;
+          width: auto;
+
+          img {
+            height: auto;
+            width: 100%;
+          }
         }
 
         h3 {
@@ -89,8 +99,40 @@
     }
   }
 
+  @media (min-width: 400px) {
+    &Last {
+      ul {
+        gap: 20px;
+        grid-template-columns: repeat(2, 170px);
+
+        li {
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
   @media (min-width: 600px) {
     padding: 80px 0;
+
+    &Last {
+      ul {
+        gap: 20px;
+        grid-template-columns: repeat(2, 270px);
+
+        li {
+          h3 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    padding: 50px 0;
 
     h2 {
       font-size: 50px;
@@ -98,13 +140,13 @@
 
     ul {
       gap: 40px;
-      grid-template-columns: repeat(3, 150px);
+      grid-template-columns: repeat(3, 220px);
     }
 
     &Last {
       ul {
         gap: 20px;
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(4, 175px);
 
         li {
           .imageWrapper {
@@ -115,7 +157,7 @@
     }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1200px) {
     padding: 125px 0;
 
     h2 {
@@ -129,8 +171,8 @@
 
     &Last {
       ul {
-        gap: 20px;
-        grid-template-columns: repeat(4, 300px);
+        gap: 50px;
+        grid-template-columns: repeat(4, 270px);
 
         li {
           align-items: normal;

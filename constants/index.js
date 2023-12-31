@@ -10,51 +10,62 @@ export const DOMAIN = 'https://barnescode.co.uk';
 
 export const CONTACT_EMAIL = 'hello@barnescode.co.uk';
 
-export const TEXT = (
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
-);
+export const CARD_TEXT = {
+  UX_DESIGN: (
+    <p>
+      Understanding user needs and potential behaviours is essential for delivering a seemless experience.
+      After gaining some insights, we can start to create multiple designs for further feedback, testing and iterations.
+      This also enables us to realise a vision, define a strategy and create technical requirements.
+    </p>,
+  ),
+  ENGINEERING: (
+    <p>
+      We strive on creating clean and scalable technical solutions. By following a very modular approach and going above industry standards, the features and functionality we build can be easily maintained, adapted and used in different areas.
+    </p>
+  ),
+  REPLATFORMING: (
+    <p>
+      We are experts at delivering re-platformed and digital transformation projects. After understanding existing processes, we can transform products or services into modern solutions with automation and greatly simplified user journeys.
+    </p>
+  )
+};
 
 export const MISSION = [
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Software',
+    text: 'Build the core product or service that meets user, business and technical requirements.',
+    title: 'Build',
     imgPath: '/software.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Services',
+    text: 'Enhance and build upon the core functionality. Optimise the user experience and introduce automation.',
+    title: 'Iterate',
     imgPath: '/services.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
-    title: 'Products',
+    text: 'Get results quickly by combining updates into small, releasable chunks, without a "big bang" release.',
+    title: 'Package',
     imgPath: '/products.svg',
   },
 ];
 
 export const PROCESS = [
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Collate the needs, wants and must haves. Understand opportunities.',
     title: 'Listen and understand',
     imgPath: '/process-listen.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Create a list of the simplest features that could be released as a first version. Keep it simple.',
     title: 'Define MVP',
-    imgPath: '/process-mvp.svg',
+    imgPath: '/process-define.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Build and deliver the first version. Obtain invaluable user feedback.',
     title: 'Deliver',
     imgPath: '/process-deliver.svg',
   },
   {
-    text: 'We build software and services that are easy to use and scale.',
+    text: 'Prioritise new features and enhancements. Build and release in small chunks; Repeat.',
     title: 'Iterate',
     imgPath: '/process-iterate.svg',
   },

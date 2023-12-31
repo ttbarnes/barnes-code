@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="225px" height="113px" viewBox="0 0 225 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>PROCESSES_DELIVER</title>
+<svg width="250px" height="137px" viewBox="0 0 250 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DELIVER</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="HOMEPAGE_FINAL" transform="translate(-981.000000, -5167.000000)">
-            <g id="PROCESSES_DELIVER" transform="translate(983.000000, 5169.000000)">
-                <g id="Group-21" transform="translate(18.225511, 0.000000)">
+        <g id="BARNES_HOME-EXTENDED-v4-Copy" transform="translate(-968, -5144)">
+            <g id="DELIVER" transform="translate(968, 5144)">
+                <rect id="Rectangle-Copy" x="0" y="0" width="250" height="137"></rect>
+                <g id="Group-21" transform="translate(23.2255, 25)">
                     <path d="M0,73.8794054 C0,54.4832588 15.7667709,38.7588108 35.2169105,38.7588108 C54.6662497,38.7588108 70.4330207,54.4832588 70.4330207,73.8794054 C70.4330207,93.275552 54.6662497,109 35.2169105,109 C15.7667709,109 0,93.275552 0,73.8794054 Z" id="Stroke-1" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M23.4875183,73.8794054 C23.4875183,67.4196106 28.7388399,62.182651 35.2163503,62.182651 C41.694661,62.182651 46.9459826,67.4196106 46.9459826,73.8794054 C46.9459826,80.3392002 41.694661,85.5761598 35.2163503,85.5761598 C28.7388399,85.5761598 23.4875183,80.3392002 23.4875183,73.8794054" id="Fill-3" fill="#3ABEEE"></path>
                     <path d="M23.4875183,73.8794054 C23.4875183,67.4196106 28.7388399,62.182651 35.2163503,62.182651 C41.694661,62.182651 46.9459826,67.4196106 46.9459826,73.8794054 C46.9459826,80.3392002 41.694661,85.5761598 35.2163503,85.5761598 C28.7388399,85.5761598 23.4875183,80.3392002 23.4875183,73.8794054 Z" id="Stroke-5" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -16,10 +17,6 @@
                     <line x1="80.2601395" y1="3.76217589" x2="52.7677381" y2="3.76217589" id="Stroke-17" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
                     <path d="M167.980421,74.324958 C145.435195,54.4482979 133.713567,19.4937279 133.713567,19.4937279 L129.902137,8.0843238 L138.008429,0 L153.869645,0 C153.869645,0 160.566461,-0.175401499 160.566461,9.84194992 C160.566461,18.2780764 149.992584,16.8724544 149.992584,16.8724544" id="Stroke-19" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </g>
-                <line x1="15.946492" y1="51.4910221" x2="4.21498195e-16" y2="51.4910221" id="Path-5-Copy" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="12.7449547" y1="59.4729755" x2="4.80230638" y2="59.4729755" id="Path-5-Copy-2" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="147.209522" y1="91.4007887" x2="131.26303" y2="91.4007887" id="Path-5-Copy" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="152.011828" y1="99.3827421" x2="144.06918" y2="99.3827421" id="Path-5-Copy-2" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
             </g>
         </g>
     </g>

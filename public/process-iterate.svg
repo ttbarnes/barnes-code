@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="245px" height="135px" viewBox="0 0 245 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>PROCESSES_ITERATE</title>
+<svg width="250px" height="137px" viewBox="0 0 250 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ITERATE</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="HOMEPAGE_FINAL" transform="translate(-1268.000000, -5145.000000)">
-            <g id="PROCESSES_ITERATE" transform="translate(1270.000000, 5147.000000)">
-                <g id="Group-23" transform="translate(28.193519, 0.000000)">
+        <g id="BARNES_HOME-EXTENDED-v4-Copy" transform="translate(-1266, -5144)">
+            <g id="ITERATE" transform="translate(1266, 5144)">
+                <g id="Group-23" transform="translate(18.1935, 3)">
                     <path d="M62.2595895,26.1388464 C62.2595895,26.1388464 69.1563795,42.152486 89.019806,42.7042118 C108.882433,43.2567371 110.813567,21.997705 110.813567,21.997705 L62.2595895,26.1388464 Z" id="Stroke-1" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <polyline id="Stroke-3" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="148.926161 12.4598062 144.352005 0.399401458 117.700449 0.399401458"></polyline>
                     <line x1="136.361971" y1="0.399801259" x2="117.70021" y2="0.399801259" id="Stroke-5" stroke="#006694" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"></line>
@@ -17,13 +17,7 @@
                     <line x1="121.570386" y1="82.5312938" x2="106.5288" y2="82.5312938" id="Stroke-19" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
                     <polyline id="Stroke-21" stroke="#006694" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" points="148.926161 12.4598062 157.985789 12.4598062 163.791173 28.1288172 155.611222 28.1288172"></polyline>
                 </g>
-                <line x1="23.9082943" y1="79.1631171" x2="3.95982002e-07" y2="79.1631171" id="Path-5-Copy" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="166.116418" y1="115.151193" x2="142.208124" y2="115.151193" id="Path-5-Copy-4" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="20.7123768" y1="87.1591423" x2="8.7887736" y2="87.1591423" id="Path-5-Copy-2" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="170.910294" y1="123.147218" x2="158.986691" y2="123.147218" id="Path-5-Copy-5" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="28.7021706" y1="71.1670919" x2="16.7785674" y2="71.1670919" id="Path-5-Copy-2" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="162.920501" y1="107.155167" x2="150.996898" y2="107.155167" id="Path-5-Copy-6" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="144.543975" y1="107.155167" x2="140.610166" y2="107.155167" id="Path-5-Copy-7" stroke="#F3F3F3" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <rect id="Rectangle" x="0" y="0" width="250" height="137"></rect>
             </g>
         </g>
     </g>
