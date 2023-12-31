@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Layout } from '../components/Layout';
 import { Meta } from '../components/Meta';
+import '../styles/imports.css';
 import '../styles/globals.scss';
 
 const App = ({ Component, pageProps }) => (
