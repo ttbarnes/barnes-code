@@ -3,20 +3,18 @@ export const API_GENERIC_ERROR_MESSAGE = 'Sorry, something has gone wrong. Pleas
 // TODO: just have name, email, message ?
 
 export const FIELDS = {
+  NAME: {
+    LABEL: 'Name',
+    ERRORS: {
+      DEFAULT: 'Enter your name'
+    }
+  },
   EMAIL: {
     LABEL: 'Email address',
     ERRORS: {
       DEFAULT: 'Enter a valid email address',
       IS_EMPTY: 'Enter an email address',
       IS_REQUIRED: 'Enter an email address'
-    }
-  },
-  SUBJECT: {
-    LABEL: 'Subject',
-    ERRORS: {
-      DEFAULT: 'Enter a subject',
-      IS_BELOW_MINIMUM: 'Enter a subject with at least 5 characters',
-      IS_ABOVE_MAXIMUM: 'Enter a subject with less than 30 characters'
     }
   },
   MESSAGE: {

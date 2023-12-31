@@ -1,7 +1,17 @@
 import Joi from 'joi';
 import { FIELDS } from '../../content-strings';
 
-const { EMAIL, SUBJECT, MESSAGE } = FIELDS;
+const { NAME, EMAIL, MESSAGE } = FIELDS;
+
+export const NAME_SCHEMA = Joi.string()
+  .min(1)
+  .messages({
+    'string.base': NAME.ERRORS.DEFAULT,
+    'string.empty': NAME.ERRORS.DEFAULT,
+    'string.min': NAME.ERRORS.DEFAULT,
+    'any.required': NAME.ERRORS.DEFAULT
+  })
+  .required();
 
 export const EMAIL_SCHEMA = Joi.string()
   .email({ tlds: { allow: false } })
@@ -11,19 +21,6 @@ export const EMAIL_SCHEMA = Joi.string()
     'any.required': EMAIL.ERRORS.IS_REQUIRED
   })
   .required();
-
-export const SUBJECT_SCHEMA = Joi.string()
-  .min(5)
-  .max(30)
-  .messages({
-    'string.base': SUBJECT.ERRORS.DEFAULT,
-    'string.empty': SUBJECT.ERRORS.DEFAULT,
-    'string.min': SUBJECT.ERRORS.IS_BELOW_MINIMUM,
-    'string.max': SUBJECT.ERRORS.IS_ABOVE_MAXIMUM,
-    'any.required': SUBJECT.ERRORS.DEFAULT
-  })
-  .required();
-
 export const MESSAGE_SCHEMA = Joi.string()
   .min(10)
   .max(200)
@@ -37,8 +34,8 @@ export const MESSAGE_SCHEMA = Joi.string()
   .required();
 
 const SCHEMA = Joi.object({
+  name: NAME_SCHEMA,
   email: EMAIL_SCHEMA,
-  subject: SUBJECT_SCHEMA,
   message: MESSAGE_SCHEMA
 });
 

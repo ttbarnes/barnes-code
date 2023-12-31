@@ -71,7 +71,7 @@ describe('ContactForm', () => {
 
       const validFormValues = {
         [FIELD_IDS.EMAIL]: 'mock@test.com',
-        [FIELD_IDS.SUBJECT]: 'Mock subject',
+        [FIELD_IDS.NAME]: 'Mock name',
         [FIELD_IDS.MESSAGE]: 'Hello world'
       };
 

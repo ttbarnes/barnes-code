@@ -11,7 +11,7 @@ import InlineErrorMessage from '../InlineErrorMessage';
 import Button from '../Button';
 import SCHEMA from '../../form-validation/contact';
 
-const { EMAIL, SUBJECT, MESSAGE } = FIELDS;
+const { NAME, EMAIL, MESSAGE } = FIELDS;
 
 const ContactForm = ({ submittedValues }) => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const ContactForm = ({ submittedValues }) => {
 
     const fieldValues = {
       email: getValues(FIELD_IDS.EMAIL),
-      subject: getValues(FIELD_IDS.SUBJECT),
+      name: getValues(FIELD_IDS.NAME),
       message: getValues(FIELD_IDS.MESSAGE)
     };
 
@@ -75,21 +75,21 @@ const ContactForm = ({ submittedValues }) => {
         name='Contact'
       >
         <FormField
+          id={FIELD_IDS.NAME}
+          type='text'
+          label={NAME.LABEL}
+          register={register}
+          validationError={errors.name?.message}
+          defaultValue={submittedValues?.[FIELD_IDS.NAME]}
+        />
+
+        <FormField
           id={FIELD_IDS.EMAIL}
           type='email'
           label={EMAIL.LABEL}
           register={register}
           validationError={errors.email?.message}
           defaultValue={submittedValues?.[FIELD_IDS.EMAIL]}
-        />
-
-        <FormField
-          id={FIELD_IDS.SUBJECT}
-          type='text'
-          label={SUBJECT.LABEL}
-          register={register}
-          validationError={errors.subject?.message}
-          defaultValue={submittedValues?.[FIELD_IDS.SUBJECT]}
         />
 
         <FormField

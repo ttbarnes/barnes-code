@@ -6,7 +6,7 @@ import { FIELD_IDS } from '../../constants';
 import { FIELDS } from '../../content-strings';
 import { getSubmitButton } from '../../test-helpers';
 
-const { EMAIL, SUBJECT, MESSAGE } = FIELDS;
+const { NAME, EMAIL, MESSAGE } = FIELDS;
 
 describe('ContactForm', () => {
   const nextRouter = _nextRouter;
@@ -26,14 +26,37 @@ describe('ContactForm', () => {
       fireEvent.submit(submitButton);
 
       await waitFor(() => {
+        const nameErrorMessage = screen.queryByText(NAME.ERRORS.DEFAULT);
+        expect(nameErrorMessage).toBeInTheDocument();
+
         const emailAddressErrorMessage = screen.queryByText(EMAIL.ERRORS.IS_EMPTY);
         expect(emailAddressErrorMessage).toBeInTheDocument();
 
-        const subjectErrorMessage = screen.queryByText(SUBJECT.ERRORS.DEFAULT);
-        expect(subjectErrorMessage).toBeInTheDocument();
-
         const messageErrorMessage = screen.queryByText(MESSAGE.ERRORS.DEFAULT);
         expect(messageErrorMessage).toBeInTheDocument();
+      });
+    });
+  });
+
+  describe(`${FIELD_IDS.NAME} field`, () => {
+    describe('when there is less than 1 character', () => {
+      it('should render a validation error', async () => {
+        render(
+          <ContactForm
+            submittedValues={{
+              [FIELD_IDS.NAME]: ''
+            }}
+          />
+        );
+
+        const submitButton = getSubmitButton();
+        fireEvent.submit(submitButton);
+
+        await waitFor(() => {
+          const nameErrorMessage = screen.queryByText(NAME.ERRORS.DEFAULT);
+
+          expect(nameErrorMessage).toBeInTheDocument();
+        });
       });
     });
   });
@@ -98,50 +121,6 @@ describe('ContactForm', () => {
           const emailAddressErrorMessage = screen.queryByText(EMAIL.ERRORS.DEFAULT);
 
           expect(emailAddressErrorMessage).toBeInTheDocument();
-        });
-      });
-    });
-  });
-
-  describe(`${FIELD_IDS.SUBJECT} field`, () => {
-    describe('when there are less than 5 characters', () => {
-      it('should render a validation error', async () => {
-        render(
-          <ContactForm
-            submittedValues={{
-              [FIELD_IDS.SUBJECT]: 'a'.repeat(4)
-            }}
-          />
-        );
-
-        const submitButton = getSubmitButton();
-        fireEvent.submit(submitButton);
-
-        await waitFor(() => {
-          const subjectErrorMessage = screen.queryByText(SUBJECT.ERRORS.IS_BELOW_MINIMUM);
-
-          expect(subjectErrorMessage).toBeInTheDocument();
-        });
-      });
-    });
-
-    describe('when there more than 30 characters', () => {
-      it('should render a validation error', async () => {
-        render(
-          <ContactForm
-            submittedValues={{
-              [FIELD_IDS.SUBJECT]: 'a'.repeat(31)
-            }}
-          />
-        );
-
-        const submitButton = getSubmitButton();
-        fireEvent.submit(submitButton);
-
-        await waitFor(() => {
-          const subjectErrorMessage = screen.queryByText(SUBJECT.ERRORS.IS_ABOVE_MAXIMUM);
-
-          expect(subjectErrorMessage).toBeInTheDocument();
         });
       });
     });

@@ -1,6 +1,6 @@
 export const FIELD_IDS = {
   EMAIL: 'email',
-  SUBJECT: 'subject',
+  NAME: 'name',
   MESSAGE: 'message'
 };
 

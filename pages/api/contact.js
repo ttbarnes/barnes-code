@@ -15,12 +15,12 @@ const handler = async (req, res) => {
       logger: true
     });
 
-    const { email, subject, message } = req.body;
+    const { email, name, message } = req.body;
 
     const info = await transporter.sendMail({
       from: email,
       to: CONTACT_FORM_RECIPIENTS,
-      subject: `Barnes Code - ${subject}`,
+      subject: `Barnes Code - ${name}`,
       html: message.replaceAll('\n', '<br/>')
     });
 

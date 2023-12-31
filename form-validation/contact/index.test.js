@@ -1,10 +1,26 @@
 import Joi from 'joi';
-import SCHEMA, { EMAIL_SCHEMA, SUBJECT_SCHEMA, MESSAGE_SCHEMA } from '.';
+import SCHEMA, { EMAIL_SCHEMA, NAME_SCHEMA, MESSAGE_SCHEMA } from '.';
 import { FIELDS } from '../../content-strings';
 
-const { EMAIL, SUBJECT, MESSAGE } = FIELDS; 
+const { NAME, EMAIL, MESSAGE } = FIELDS; 
 
 describe('form-validation/contact', () => {
+  describe('NAME_SCHEMA', () => {
+    it('should return a Joi schema', () => {
+      const expected = Joi.string()
+        .min(1)
+        .messages({
+          'string.base': NAME.ERRORS.DEFAULT,
+          'string.empty': NAME.ERRORS.DEFAULT,
+          'string.min': NAME.ERRORS.DEFAULT,
+          'any.required': NAME.ERRORS.DEFAULT
+        })
+        .required();
+
+      expect(NAME_SCHEMA).toEqual(expected);
+    });
+  });
+
   describe('EMAIL_SCHEMA', () => {
     it('should return a Joi schema', () => {
       const expected = Joi.string()
@@ -17,24 +33,6 @@ describe('form-validation/contact', () => {
         .required();
 
       expect(EMAIL_SCHEMA).toEqual(expected);
-    });
-  });
-
-  describe('SUBJECT_SCHEMA', () => {
-    it('should return a Joi schema', () => {
-      const expected = Joi.string()
-        .min(5)
-        .max(30)
-        .messages({
-          'string.base': SUBJECT.ERRORS.DEFAULT,
-          'string.empty': SUBJECT.ERRORS.DEFAULT,
-          'string.min': SUBJECT.ERRORS.IS_BELOW_MINIMUM,
-          'string.max': SUBJECT.ERRORS.IS_ABOVE_MAXIMUM,
-          'any.required': SUBJECT.ERRORS.DEFAULT
-        })
-        .required();
-
-      expect(SUBJECT_SCHEMA).toEqual(expected);
     });
   });
 
@@ -59,8 +57,8 @@ describe('form-validation/contact', () => {
   describe('SCHEMA', () => {
     it('should return a Joi schema for all fields', () => {
       const expected = Joi.object({
+        name: NAME_SCHEMA,
         email: EMAIL_SCHEMA,
-        subject: SUBJECT_SCHEMA,
         message: MESSAGE_SCHEMA
       });
 
