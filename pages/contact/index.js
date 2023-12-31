@@ -25,7 +25,6 @@ const ContactPage = ({ submittedValues }) => (
         </p>
 
         <ContactForm submittedValues={submittedValues} />
-
       </div>
     </div>
   </>
