@@ -9,9 +9,11 @@ const ContactThankYouPage = () => (
   <>
     <div className={styles.intro}>
       <div className={`container ${styles.container}`}>
-        <h2>{PAGE_TITLE}</h2>
+        <div>
+          <h2>{PAGE_TITLE}</h2>
 
-        <p>{BODY}</p>
+          <p>{BODY}</p>
+        </div>
       </div>
     </div>
   </>
