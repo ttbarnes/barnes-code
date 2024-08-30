@@ -21,7 +21,6 @@
 
   > div {
     width: 100%;
-    max-width: 100%;
     padding-bottom: 4em;
   }
 
@@ -61,7 +60,7 @@
   align-items: flex-start;
   text-align: left;
 
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     max-width: 550px;
   }
 }
