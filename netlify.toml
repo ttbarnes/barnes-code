@@ -4,4 +4,5 @@
 [build.environment]
   NODE_VERSION = "19.4.0"
   NPM_FLAGS = "--legacy-peer-deps"
-
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
