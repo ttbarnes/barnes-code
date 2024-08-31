@@ -14,9 +14,9 @@ Built with [Next.js](https://nextjs.org/), deployed with [Netlify](https://www.n
 
 - Node, NPM
 - Next.js, React
-- [Jest](https://jestjs.io/)
-- [ESlin  t](https://eslint.org)
-- [framer-motion](https://www.framer.com/motion/)
+- Jest
+- ESlint
+- framer-motion
 
 ## Running locally
 
