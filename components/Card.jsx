@@ -6,9 +6,9 @@ import styles from '../styles/card.module.scss';
 export const Card = ({
   alt,
   children,
-  className,
-  icon,
-  largeImage,
+  className = '',
+  icon = '',
+  largeImage = '',
   title,
   customIconSize
 }) => {
@@ -59,10 +59,4 @@ Card.propTypes = {
     PropTypes.element
   ]).isRequired,
   customIconSize: PropTypes.object
-};
-
-Card.defaultProps = {
-  className: '',
-  icon: '',
-  largeImage: ''
 };

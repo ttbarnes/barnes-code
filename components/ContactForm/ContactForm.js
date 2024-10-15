@@ -13,7 +13,7 @@ import SCHEMA from '../../form-validation/contact';
 
 const { NAME, EMAIL, MESSAGE } = FIELDS;
 
-const ContactForm = ({ submittedValues }) => {
+const ContactForm = ({ submittedValues = {} }) => {
   const router = useRouter();
   const [apiError, setApiError] = useState(false);
 
@@ -114,10 +114,6 @@ ContactForm.propTypes = {
     name: PropTypes.string,
     message: PropTypes.string
   })
-};
-
-ContactForm.defaultProps = {
-  submittedValues: {}
 };
 
 export default ContactForm;

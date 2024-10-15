@@ -11,8 +11,8 @@ const FormField = ({
   type,
   label,
   register,
-  validationError,
-  defaultValue
+  validationError = '',
+  defaultValue = ''
 }) => {
   if (!id || !type || !label) {
     return null;
@@ -69,11 +69,6 @@ FormField.propTypes = {
   register: PropTypes.func.isRequired,
   validationError: PropTypes.string,
   defaultValue: PropTypes.string
-};
-
-FormField.defaultProps = {
-  validationError: '',
-  defaultValue: ''
 };
 
 export default FormField;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Form = ({ children, onSubmit, name }) => (
+const Form = ({ children, name, onSubmit = null }) => (
   <form
     aria-label={`${name} form`}
     onSubmit={onSubmit}
@@ -19,12 +19,6 @@ Form.propTypes = {
   ]).isRequired,
   name: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired
-};
-
-Form.defaultProps = {
-  onSubmit: null,
-  action: '',
-  method: ''
 };
 
 export default Form;

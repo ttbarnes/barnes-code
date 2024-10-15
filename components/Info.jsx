@@ -47,7 +47,3 @@ Info.propTypes = {
   strapline: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };
-
-Info.defaultProps = {
-  className: ''
-};

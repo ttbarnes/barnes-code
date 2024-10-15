@@ -9,7 +9,7 @@ const {
   CONTACT: { PAGE_TITLE, INTRO }
  } = PAGES;
 
-const ContactPage = ({ submittedValues }) => (
+const ContactPage = ({ submittedValues = {} }) => (
   <>
     <div className={styles.intro}>
       <div className={`container ${styles.container}`}>
@@ -38,10 +38,6 @@ ContactPage.propTypes = {
     subject: PropTypes.string,
     message: PropTypes.string
   })
-};
-
-ContactPage.defaultProps = {
-  submittedValues: {}
 };
 
 export default ContactPage;
